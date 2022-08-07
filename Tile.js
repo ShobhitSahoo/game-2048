@@ -19,7 +19,6 @@ export default class Tile {
         const backgroundLightness = 100 - power * 9;    // As power increases, background lightness decreases by 9%
         this.#tileElement.style.setProperty('--background-lightness', `${backgroundLightness}%`);
         this.#tileElement.style.setProperty('--text-lightness', `${backgroundLightness <= 50 ? 80 : 20}%`);
-
     }
 
     set x(value) {
