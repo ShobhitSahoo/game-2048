@@ -127,7 +127,7 @@ function canMoveRight() {
     return canMove(grid.cellsByRow.map(row => [...row].reverse()));
 }
 
-function canMove() {
+function canMove(cells) {
     return cells.some(group => {
         return group.some((cell, index) => {
             if (index === 0) return false;
